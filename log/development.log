@@ -1397,3 +1397,60 @@ Processing by Api::V1::PostsController#create as HTML
 Completed 201 Created in 22ms (Views: 0.3ms | ActiveRecord: 7.5ms | Allocations: 9459)
 
 
+  [1m[35m (41.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20230609125410)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230609125410"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddContentToPosts (20230705050557)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "posts" ADD "content" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230705050557"]]
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-07-13 15:56:47.935043"], ["updated_at", "2023-07-13 15:56:47.935043"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Next.js + Ruby on Rails + Docker の環境構築"], ["created_at", "2023-07-13 15:56:53.709943"], ["updated_at", "2023-07-13 15:56:53.709943"], ["content", nil]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "React Hooks でカスタムフックを作る"], ["created_at", "2023-07-13 15:56:53.715681"], ["updated_at", "2023-07-13 15:56:53.715681"], ["content", nil]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "GraphQL と Apollo Client 入門"], ["created_at", "2023-07-13 15:56:53.720593"], ["updated_at", "2023-07-13 15:56:53.720593"], ["content", nil]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "【TypeScript4.3】Template Literal Types"], ["created_at", "2023-07-13 15:56:53.725398"], ["updated_at", "2023-07-13 15:56:53.725398"], ["content", nil]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tailwind CSS でダークモード実装"], ["created_at", "2023-07-13 15:56:53.729705"], ["updated_at", "2023-07-13 15:56:53.729705"], ["content", nil]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 172.29.0.1 at 2023-07-14 00:57:19 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 636)
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 6836)
+
+
+Started GET "/null" for 172.29.0.1 at 2023-07-14 00:57:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/null"):
+  
+Started GET "/api/v1/posts" for 172.29.0.1 at 2023-07-14 00:57:45 +0900
+Processing by Api::V1::PostsController#index as */*
+  Parameters: {"post"=>{}}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 5.1ms | Allocations: 5474)
+
+
