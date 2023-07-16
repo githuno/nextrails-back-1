@@ -1,4 +1,6 @@
+# Ignore key
 *.key
+*Key
 
 # Ignore bundler config.
 /.bundle
@@ -22,3 +24,4 @@ doc/
 .DS_Store
 .idea
 .secret
+/config/master.key
