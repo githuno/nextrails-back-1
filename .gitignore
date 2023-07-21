@@ -25,3 +25,4 @@ doc/
 .idea
 .secret
 /config/master.key
+/config/master.key
