@@ -2074,3 +2074,868 @@ Processing by Api::V1::PostsController#index as */*
 Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1435)
 
 
+Started GET "/" for 10.0.0.1 at 2023-07-21 21:11:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 528)
+Completed 200 OK in 15ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4283)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:17:31 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (19.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 139ms (Views: 53.0ms | ActiveRecord: 65.9ms | Allocations: 7083)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:18:22 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 5.0ms | Allocations: 9136)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:18:43 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1545)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:19:24 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1449)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:19:29 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1435)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:21:21 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.5ms | Allocations: 1436)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:21:49 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 1435)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 21:22:53 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 10.1ms | ActiveRecord: 4.4ms | Allocations: 9136)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: backend
+Started GET "/posts" for 10.0.0.3 at 2023-07-21 21:27:30 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 8.1ms | ActiveRecord: 4.4ms | Allocations: 9169)
+
+
+Started GET "/" for 10.0.0.1 at 2023-07-21 22:07:48 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 528)
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 4283)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:08:49 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 14.8ms | ActiveRecord: 20.6ms | Allocations: 7084)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:09:48 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 4.6ms | Allocations: 9136)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:10:32 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1545)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:10:33 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1449)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:11:09 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 9.1ms | ActiveRecord: 5.0ms | Allocations: 9136)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:11:54 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 9.3ms | ActiveRecord: 4.3ms | Allocations: 9136)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:13:34 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1545)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:14:58 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1435)
+
+
+Started GET "/api/v1/posts/10" for 10.0.0.1 at 2023-07-21 22:14:59 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2457)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:15:00 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1473)
+
+
+Started DELETE "/api/v1/posts/10" for 10.0.0.2 at 2023-07-21 22:16:01 +0900
+Processing by Api::V1::PostsController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (3.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 11ms (ActiveRecord: 6.5ms | Allocations: 2099)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:16:17 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1351)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:17:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.1ms | ActiveRecord: 4.8ms | Allocations: 9052)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:20:09 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1461)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:21:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 4.3ms | Allocations: 9052)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:22:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 8.8ms | ActiveRecord: 5.3ms | Allocations: 9053)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:23:24 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 4.9ms | Allocations: 9052)
+
+
+Started DELETE "/api/v1/posts/7" for 10.0.0.1 at 2023-07-21 22:23:26 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 2.4ms | Allocations: 3037)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:23:26 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1362)
+
+
+Started DELETE "/api/v1/posts/8" for 10.0.0.1 at 2023-07-21 22:23:28 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 5ms (ActiveRecord: 2.2ms | Allocations: 1898)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:23:29 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1184)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:24:49 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.2ms | ActiveRecord: 4.7ms | Allocations: 8884)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:26:25 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 8.9ms | ActiveRecord: 4.0ms | Allocations: 8884)
+
+
+Started DELETE "/api/v1/posts/6" for 10.0.0.1 at 2023-07-21 22:26:31 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 2.9ms | Allocations: 3037)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:26:31 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1194)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:29:17 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 4.4ms | Allocations: 8800)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:30:00 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 8.5ms | ActiveRecord: 4.7ms | Allocations: 8800)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:31:20 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1209)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:31:57 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1113)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:34:47 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 8.8ms | ActiveRecord: 4.2ms | Allocations: 8800)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:36:03 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1209)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:37:19 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.8ms | Allocations: 1113)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:37:56 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1113)
+
+
+Started DELETE "/api/v1/posts/9" for 10.0.0.1 at 2023-07-21 22:37:59 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 2.7ms | Allocations: 3865)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:37:59 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1095)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:39:55 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1015)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:40:10 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1015)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:40:11 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1016)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:40:18 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1015)
+
+
+Started POST "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:42:30 +0900
+Processing by Api::V1::PostsController#create as HTML
+  Parameters: {"title"=>"てｓｔ", "content"=>"てｓｔ", "post"=>{"title"=>"てｓｔ", "content"=>"てｓｔ"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+  [1m[36mPost Create (15.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "てｓｔ"], ["created_at", "2023-07-21 13:42:30.171834"], ["updated_at", "2023-07-21 13:42:30.171834"], ["content", "てｓｔ"]]
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+Completed 201 Created in 24ms (Views: 0.3ms | ActiveRecord: 17.4ms | Allocations: 2403)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:42:30 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:43:50 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started POST "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:45:54 +0900
+Processing by Api::V1::PostsController#create as HTML
+  Parameters: {"title"=>"ぴいｃつ", "content"=>"おｇｙくうｒ", "post"=>{"title"=>"ぴいｃつ", "content"=>"おｇｙくうｒ"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+  [1m[36mPost Create (2.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "ぴいｃつ"], ["created_at", "2023-07-21 13:45:54.533527"], ["updated_at", "2023-07-21 13:45:54.533527"], ["content", "おｇｙくうｒ"]]
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:14:in `create'
+Completed 201 Created in 20ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 1901)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:45:54 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1193)
+
+
+Started DELETE "/api/v1/posts/17" for 10.0.0.1 at 2023-07-21 22:46:57 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 6ms (ActiveRecord: 2.4ms | Allocations: 1877)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:46:57 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:47:28 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 22:47:28 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 624)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 22:48:38 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 623)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:48:38 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1105)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:48:39 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:48:41 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.1 at 2023-07-21 22:48:43 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 618)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:48:43 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:49:20 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1105)
+
+
+Started GET "/api/v1/posts/3" for 10.0.0.1 at 2023-07-21 22:49:21 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:49:21 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/3" for 10.0.0.1 at 2023-07-21 22:49:46 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:49:47 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:51:05 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.6ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.1 at 2023-07-21 22:51:05 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.1 at 2023-07-21 22:51:07 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.1 at 2023-07-21 22:51:19 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:51:19 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.2 at 2023-07-21 22:52:27 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 618)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:27 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:29 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:30 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/3" for 10.0.0.2 at 2023-07-21 22:52:32 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:33 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/3" for 10.0.0.1 at 2023-07-21 22:52:49 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:49 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:51 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/4" for 10.0.0.1 at 2023-07-21 22:52:52 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:52 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:52:53 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:53:11 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.2 at 2023-07-21 22:53:25 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:53:25 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:53:49 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.1 at 2023-07-21 22:53:52 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts/2" for 10.0.0.2 at 2023-07-21 22:54:33 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 617)
+
+
+Started GET "/api/v1/posts/null" for 10.0.0.2 at 2023-07-21 22:54:34 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 582)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=null):
+  
+app/controllers/api/v1/posts_controller.rb:8:in `show'
+Started GET "/api/v1/posts/null" for 10.0.0.2 at 2023-07-21 22:54:34 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"null"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 548)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=null):
+  
+app/controllers/api/v1/posts_controller.rb:8:in `show'
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:54:44 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.2 at 2023-07-21 22:54:47 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 622)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:54:51 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:54:53 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.2 at 2023-07-21 22:54:56 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 622)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 22:55:09 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 622)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 22:55:11 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 622)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.2 at 2023-07-21 22:55:28 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 622)
+
+
+Started PUT "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 22:56:40 +0900
+Processing by Api::V1::PostsController#update as HTML
+  Parameters: {"title"=>"てｓｔ", "content"=>"てｓｔ編集", "id"=>"16", "post"=>{"title"=>"てｓｔ", "content"=>"てｓｔ編集"}}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:22:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:23:in `update'
+  [1m[36mPost Update (2.8ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = $1, "content" = $2 WHERE "posts"."id" = $3[0m  [["updated_at", "2023-07-21 13:56:40.903228"], ["content", "てｓｔ編集"], ["id", 16]]
+  ↳ app/controllers/api/v1/posts_controller.rb:23:in `update'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:23:in `update'
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 2499)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 22:56:41 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1104)
+
+
+Started GET "/api/v1/posts/16" for 10.0.0.2 at 2023-07-21 22:56:43 +0900
+Processing by Api::V1::PostsController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 622)
+
+
+Started PUT "/api/v1/posts/16" for 10.0.0.1 at 2023-07-21 23:01:38 +0900
+Processing by Api::V1::PostsController#update as HTML
+  Parameters: {"title"=>"てｓｔ", "content"=>"てｓｔ編集", "id"=>"16", "post"=>{"title"=>"てｓｔ", "content"=>"てｓｔ編集"}}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:22:in `update'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 756)
+
+
+Started GET "/api/v1/posts" for 10.0.0.2 at 2023-07-21 23:01:38 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1107)
+
+
