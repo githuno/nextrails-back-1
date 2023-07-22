@@ -14,6 +14,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins "*" # "localhost:#{hostp}" # 10.0.0.1 や frontend では不可
     # https://qiita.com/mtoyopet/items/326ba62d485e9ef0dacd
+    # https://engr-sng.com/blog/ruby1
 
     resource "*",
       headers: :any,
