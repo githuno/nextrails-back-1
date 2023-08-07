@@ -66,6 +66,6 @@ Rails.application.configure do
   # localhost:3000では通信に失敗するため
   # hostをdocker-compose.ymlのコンテナ名に合わせる
   config.hosts << "backend"
-  config.hosts << /[a-zA-Z0-9-]+\.github\.dev/ # codespace専用
+  config.hosts << /[a-zA-Z0-9-]+\.app\.github\.dev/ # codespace専用(ここが間違っていると403エラーになる)
 
 end
