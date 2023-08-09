@@ -66,7 +66,7 @@ Rails.application.configure do
   # localhost:3000では通信に失敗するため
   config.hosts << "backend" # hostをdocker-compose.ymlの（コンテナ名ではなく）サービス名に合わせる。※ENV['SERVICE']
   
-  config.hosts << /^#{ENV['CODESPACE_NAME']}[a-zA-Z0-9.-]+/ # $CODESPACE_NAMEではじまる全てのケースに対応
+  config.hosts << /^#{ENV['CODESPACE_NAME']}[\w+\.-]+/i # $CODESPACE_NAMEではじまる全てのケースに対応
     # 具体的には"$CODESPACE_NAME-ポート番号-3004.preview.app.github.dev" や、
     # "CODESPACE_NAME-ポート番号-3004..app.github.dev"が存在し、どちらにも対応できた。
 end
