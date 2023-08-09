@@ -64,8 +64,8 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # localhost:3000では通信に失敗するため
-  # hostをdocker-compose.ymlのコンテナ名に合わせる
-  config.hosts << "backend"
-  config.hosts << /[a-zA-Z0-9-]+\.github\.dev/ # codespace専用
+  config.hosts << "backend" # hostをdocker-compose.ymlの（コンテナ名ではなく）サービス名に合わせる。※ENV['SERVICE']
+  # config.hosts << /[a-zA-Z0-9-]+\.app\.github\.dev/ # codespace専用
+  config.hosts << "https://#{ENV['CODESPACE_NAME']}.#{ENV['GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN']}"
 
 end
