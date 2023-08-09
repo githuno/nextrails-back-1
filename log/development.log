@@ -3161,6 +3161,140 @@ Processing by Api::V1::PostsController#index as */*
 Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1194)
 
 
+  [1m[35m (1468.4ms)[0m  [1m[35mCREATE DATABASE "app_development" ENCODING = 'unicode'[0m
+  [1m[35m (1245.8ms)[0m  [1m[35mCREATE DATABASE "app_test" ENCODING = 'unicode'[0m
+  [1m[35m (64.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20230609125410)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (32.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230609125410"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddContentToPosts (20230705050557)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "content" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230705050557"]]
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (14.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-07 16:30:54.585465"], ["updated_at", "2023-08-07 16:30:54.585465"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (1.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Next.js + Ruby on Rails + Docker の環境構築"], ["created_at", "2023-08-07 16:30:56.276242"], ["updated_at", "2023-08-07 16:30:56.276242"], ["content", nil]]
+  [1m[36mTRANSACTION (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "React Hooks でカスタムフックを作る"], ["created_at", "2023-08-07 16:30:56.290865"], ["updated_at", "2023-08-07 16:30:56.290865"], ["content", nil]]
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "GraphQL と Apollo Client 入門"], ["created_at", "2023-08-07 16:30:56.301151"], ["updated_at", "2023-08-07 16:30:56.301151"], ["content", nil]]
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "【TypeScript4.3】Template Literal Types"], ["created_at", "2023-08-07 16:30:56.311302"], ["updated_at", "2023-08-07 16:30:56.311302"], ["content", nil]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "content") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Tailwind CSS でダークモード実装"], ["created_at", "2023-08-07 16:30:56.323491"], ["updated_at", "2023-08-07 16:30:56.323491"], ["content", nil]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:31:58 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 15.4ms | ActiveRecord: 8.8ms | Allocations: 9645)
+
+
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:33:10 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 1209)
+
+
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:33:13 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1113)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:35:05 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 10.1ms | ActiveRecord: 6.3ms | Allocations: 8800)
+
+
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:35:06 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1209)
+
+
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:35:11 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1113)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:36:21 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1273)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:37:33 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 1113)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked host: sturdy-bassoon-769jxrvpx4x3pggx-3002.app.github.dev
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:54:29 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 10.9ms | ActiveRecord: 6.3ms | Allocations: 8800)
+
+
+Started DELETE "/api/v1/posts/5" for 10.240.1.75 at 2023-08-08 01:54:35 +0900
+Processing by Api::V1::PostsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/posts_controller.rb:31:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:32:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 7.2ms | Allocations: 3036)
+
+
+Started GET "/api/v1/posts" for 10.0.0.3 at 2023-08-08 01:54:35 +0900
+Processing by Api::V1::PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/api/v1/posts_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1095)
+
+
   [1m[35m (7883.2ms)[0m  [1m[35mCREATE DATABASE "app_development" ENCODING = 'unicode'[0m
   [1m[35m (2202.7ms)[0m  [1m[35mCREATE DATABASE "app_test" ENCODING = 'unicode'[0m
   [1m[35m (791.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
